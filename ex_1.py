@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from librip.gens import field
+from librip.gens import *
 
 goods = [
     {'title': 'Ковер', 'price': 2000, 'color': 'green'},
@@ -9,3 +9,9 @@ goods = [
 ]
 
 # Реализация задания 1
+
+print(*field(goods, 'title'), sep=', ')
+print(*field(goods, 'title', 'price'), sep=', ')
+print(*field(goods, 'title', 'price', 'color'), sep=', ')
+
+print(*gen_random(1,20,5), sep=', ')
