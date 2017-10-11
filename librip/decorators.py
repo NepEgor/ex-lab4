@@ -38,8 +38,8 @@
 
 
 def print_result(func):
-    def dec_func():
-        res = func()
+    def dec_func(*args, **kwargs):
+        res = func(*args, **kwargs)
         print(func.__name__)
 
         if isinstance(res, list):
@@ -52,5 +52,7 @@ def print_result(func):
 
         else:
             print(res)
+
+        return res
 
     return dec_func
