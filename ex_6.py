@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 import json
 import sys
 from librip.ctxmngrs import timer
@@ -43,7 +43,7 @@ def f3(arg):
 
 @print_result
 def f4(arg):
-    salaries = list(gen_random(100_000, 200_001, len(arg)))
+    salaries = list(gen_random(100000, 200001, len(arg)))
     return list(map(lambda x: x[0] + ', зарплата ' + str(x[1]) + ' руб', zip(arg, salaries)))
 
 
