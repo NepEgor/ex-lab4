@@ -10,6 +10,9 @@ data3 = ['ABC', 'aBc', 'AbC']
 uni1 = Unique(data1)
 print(*uni1, sep=', ')
 
+uni2 = Unique(data2)
+print(*uni2, sep=', ')
+
 uni31 = Unique(data3)
 uni32 = Unique(data3, ignore_case=True)
 print(*uni31, sep=', ')
