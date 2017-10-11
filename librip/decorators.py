@@ -35,3 +35,22 @@
 # test_4
 # 1
 # 2
+
+
+def print_result(func):
+    def dec_func():
+        res = func()
+        print(func.__name__)
+
+        if isinstance(res, list):
+            for x in res:
+                print(x)
+
+        elif isinstance(res, dict):
+            for key, val in res.items():
+                print('{} = {}'.format(key, val))
+
+        else:
+            print(res)
+
+    return dec_func
