@@ -14,4 +14,4 @@ print(*field(goods, 'title'), sep=', ')
 print(*field(goods, 'title', 'price'), sep=', ')
 print(*field(goods, 'title', 'price', 'color'), sep=', ')
 
-print(*gen_random(1,20,5), sep=', ')
+print(*gen_random(1, 20, 5), sep=', ')
